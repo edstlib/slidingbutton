@@ -15,7 +15,7 @@ allprojects {
 Add this to your app `build.gradle`:
 ```groovy
 dependencies {
-    implementation 'com.github.edtslib:SlidingButton:1.0.1'
+    implementation 'com.github.edtslib:slidingbutton:1.0.4'
 }
 ```
 # Usage
