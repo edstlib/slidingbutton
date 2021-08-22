@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- normal button text color -->
+    <item android:color="#FFFFFF" android:state_activated="false" />
+    <!-- slide over button text color -->
+    <item android:color="@color/colorBlue" android:state_activated="true" />
+</selector>

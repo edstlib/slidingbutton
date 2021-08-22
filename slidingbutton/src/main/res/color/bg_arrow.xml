@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- color when arrow drag -->
+    <item android:color="#ffffff" android:state_selected="true"/>
+    <!-- color when arrow idle -->
+    <item android:color="@color/colorBlue"/>
+</selector>

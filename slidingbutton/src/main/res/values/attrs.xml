@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlidingButton">
+        <attr name="height" format="dimension" />
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="textStyle" format="reference" />
+        <attr name="textColor" format="integer" />
+        <attr name="slideColor" format="color" />
+        <attr name="arrowColor" format="integer" />
+        <attr name="activated" format="boolean" />
+    </declare-styleable>
+</resources>

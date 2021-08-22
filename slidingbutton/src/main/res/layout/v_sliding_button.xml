@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvDefault"
+        app:cardCornerRadius="16dp"
+        app:strokeColor="@color/colorBlue"
+        app:strokeWidth="1dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/bg_slide_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvButtonDefault"
+            android:layout_gravity="center_vertical"
+            android:translationX="100dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/button_text"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cl_slide_button_text" />
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvSwipe"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/colorBlue"
+        app:cardElevation="0dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvButtonSwipe"
+            android:translationX="100dp"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textAllCaps="true"
+            android:text="@string/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/cl_slide_button_text" />
+    </androidx.cardview.widget.CardView>
+    <id.co.edtslib.slidingbutton.arrow.ArrowView
+        android:id="@+id/vArrow"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>
