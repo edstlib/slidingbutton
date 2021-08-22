@@ -94,8 +94,8 @@ You can set a listener to be notified when the user slides across the SlidingBut
 
 ```kotlin
         val slidingButton = findViewById<SlidingButton>(R.id.slidingButton)
-        slidingButton.delegate = object : SlideButtonDelegate {
-            override fun onSlideCompleted() {
+        slidingButton.delegate = object : SlidingButtonDelegate {
+            override fun onCompleted() {
                 Toast.makeText(this@MainActivity, "Add some action on here", Toast.LENGTH_SHORT).show()
             }
         }
