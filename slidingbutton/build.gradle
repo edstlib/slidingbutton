@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'id.co.edtslib.slidingbutton'
-version = '1.0.3'
+version = '1.0.4'
 
 afterEvaluate {
     publishing {
@@ -13,9 +13,9 @@ afterEvaluate {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
                 from components.release
-                groupId = 'id.co.edtslib.slidingbutton'
+                groupId = 'id.co.edtslib'
                 artifactId = 'slidingbutton'
-                version = '1.0.3'
+                version = '1.0.4'
             }
         }
     }
