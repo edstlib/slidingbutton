@@ -106,16 +106,6 @@ class SlidingButton: FrameLayout {
             a.recycle()
         }
 
-        vArrow?.post {
-            vArrow!!.maxWidth = measuredWidth.toFloat()-vArrow!!.width.toFloat()-2*resources.getDimensionPixelSize(
-                R.dimen.dimen_6dp
-            )
-
-            tvButtonDefault?.translationX = (measuredWidth.toFloat() - tvButtonDefault!!.width)/2.0f
-            tvButtonSwipe?.translationX = tvButtonDefault!!.translationX
-
-        }
-
         vArrow?.delegate = object : ArrowDelegate {
             override fun drag(x: Float) {
                 val layoutParams = cvSwipe?.layoutParams
@@ -138,6 +128,21 @@ class SlidingButton: FrameLayout {
         }
 
         isActivated = activated
+    }
+
+    override fun onLayout(changed: Boolean, left: Int, top: Int, right: Int, bottom: Int) {
+        super.onLayout(changed, left, top, right, bottom)
+        if (changed) {
+            val width = right - left
+
+            vArrow!!.maxWidth = width.toFloat()-vArrow!!.width.toFloat()-2*resources.getDimensionPixelSize(
+                R.dimen.dimen_6dp
+            )
+
+            tvButtonDefault?.translationX = (width.toFloat() - tvButtonDefault!!.width)/2.0f
+            tvButtonSwipe?.translationX = tvButtonDefault!!.translationX
+
+        }
     }
 
     // enabled/disabled slide button view
