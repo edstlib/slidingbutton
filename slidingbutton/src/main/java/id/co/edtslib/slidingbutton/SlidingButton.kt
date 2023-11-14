@@ -107,11 +107,11 @@ class SlidingButton: FrameLayout {
         }
 
         vArrow?.post {
-            vArrow!!.maxWidth = width.toFloat()-vArrow!!.width.toFloat()-2*resources.getDimensionPixelSize(
+            vArrow!!.maxWidth = measuredWidth.toFloat()-vArrow!!.width.toFloat()-2*resources.getDimensionPixelSize(
                 R.dimen.dimen_6dp
             )
 
-            tvButtonDefault?.translationX = (width.toFloat() - tvButtonDefault!!.width)/2.0f
+            tvButtonDefault?.translationX = (measuredWidth.toFloat() - tvButtonDefault!!.width)/2.0f
             tvButtonSwipe?.translationX = tvButtonDefault!!.translationX
 
         }
